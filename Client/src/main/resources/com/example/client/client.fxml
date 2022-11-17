@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<VBox alignment="BOTTOM_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.client.Controller">
+
+    <VBox>
+        <TextArea fx:id="textArea" VBox.vgrow="ALWAYS" editable="false"/>
+        <HBox>
+            <TextField fx:id="message" HBox.hgrow="ALWAYS" editable="true" promptText="Введите сообщение ..."
+            onAction="#sendMessage"/>
+            <Button text="Отправить" onAction="#sendMessage"/>
+        </HBox>
+    </VBox>
+
+</VBox>
